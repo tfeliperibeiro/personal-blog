@@ -1,0 +1,31 @@
+@use '../../sass/theme';
+
+.container-social-media {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  span {
+    color: theme.$white;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  svg {
+    transition: all 200ms ease-in-out;
+  }
+
+  &:hover {
+    svg {
+      transform: scale(1.1);
+      transition: all 200ms ease-in-out;
+    }
+  }
+}

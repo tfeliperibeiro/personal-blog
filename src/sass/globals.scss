@@ -1,0 +1,24 @@
+@use './theme';
+
+[data-rehype-pretty-code-fragment] code {
+  display: grid;
+  background-color: transparent;
+}
+
+[data-rehype-pretty-code-fragment] .line--highlighted {
+  background-color: rgba(203, 213, 224, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: theme.$dark;
+}
+
+a {
+  text-decoration: none;
+}

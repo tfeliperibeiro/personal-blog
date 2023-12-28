@@ -1,0 +1,55 @@
+@use '../../../sass/theme';
+@use '../../../sass/utils/mixins';
+
+.post-title {
+  color: theme.$white;
+  font-weight: 900;
+  margin: 4rem 0 0.5rem 0;
+}
+
+.container-image {
+  position: relative;
+  height: 425px;
+  margin-top: 2rem;
+}
+
+.container-image-link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+
+  span {
+    @include mixins.date-text;
+    font-size: 0.813rem;
+  }
+
+  .links {
+    @include mixins.link;
+  }
+}
+
+.text-date {
+  @include mixins.date-text;
+}
+
+.readingTime {
+  @include mixins.date-text;
+}
+
+.back-link {
+  color: theme.$white;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  svg {
+    transition: transform 200ms ease-out;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(-0.2rem);
+      transition: transform 200ms ease-out;
+    }
+  }
+}

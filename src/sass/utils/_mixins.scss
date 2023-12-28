@@ -1,0 +1,22 @@
+@use '../theme';
+
+@mixin date-text {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: theme.$gray;
+}
+
+@mixin link {
+  a {
+    @include date-text;
+    font-size: 0.813rem;
+    margin-top: 0.5rem;
+    transition: color 0.2s ease-out;
+    text-decoration: underline;
+
+    &:hover {
+      color: theme.$teal;
+      transition: color 0.2s ease-out;
+    }
+  }
+}

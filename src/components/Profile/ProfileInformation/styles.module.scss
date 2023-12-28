@@ -1,0 +1,45 @@
+@use '../../../sass/theme';
+@use '../../../sass/utils/screen';
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  h1 {
+    color: theme.$white;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  p {
+    color: theme.$gray;
+    font-weight: 300;
+  }
+}
+
+.description {
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  line-height: 150%;
+  color: theme.$gray;
+
+  @media (max-width: screen.$sm) {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+}
+.show {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.hidden {
+  opacity: 0;
+}

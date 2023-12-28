@@ -1,0 +1,16 @@
+.profile {
+  pointer-events: none;
+}
+
+.profile-float {
+  img {
+    transition: all 200ms ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: all 200ms ease-in-out;
+    }
+  }
+}

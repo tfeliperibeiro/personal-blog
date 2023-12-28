@@ -1,0 +1,38 @@
+@use '../../sass/theme';
+@use '../../sass/utils/mixins';
+
+@mixin headings {
+  color: theme.$white;
+  font-weight: 600;
+  margin-top: 3.75rem;
+}
+
+@mixin titles {
+  color: theme.$gray;
+  font-weight: 400;
+  margin: 1rem 0;
+  line-height: 150%;
+}
+
+.mdx-components {
+  margin-top: 4rem;
+  @include mixins.link;
+
+  a {
+    font-size: 1rem;
+  }
+}
+
+.headings {
+  @include headings();
+}
+
+.paragraphs {
+  @include titles();
+}
+
+.emphasis {
+  @include headings();
+  font-weight: 400;
+  line-height: 150%;
+}

@@ -1,0 +1,29 @@
+@use '../../sass/theme';
+@use '../../sass/utils/screen';
+
+.container-gradient {
+  position: relative;
+}
+
+.gradient {
+  pointer-events: none;
+  position: absolute;
+  bottom: -6vw;
+  left: 0;
+  right: 0;
+  top: -60vw;
+  z-index: -1;
+  filter: blur(64px);
+  background: linear-gradient(
+    to right,
+    rgba(theme.$teal, 0.2),
+    rgba(theme.$sky, 0.2),
+    rgba(theme.$indigo, 0.2)
+  );
+
+  @media (min-width: screen.$md) {
+    left: -7vw;
+    right: -7vw;
+    top: -6vw;
+  }
+}

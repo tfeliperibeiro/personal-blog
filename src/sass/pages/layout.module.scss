@@ -1,0 +1,11 @@
+@use '../utils/screen';
+
+.container {
+  @media (max-width: screen.$sm) {
+    margin-inline: 1rem;
+  }
+
+  position: relative;
+  max-width: 672px;
+  margin: 2rem auto;
+}

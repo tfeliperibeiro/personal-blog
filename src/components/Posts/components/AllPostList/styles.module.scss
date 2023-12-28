@@ -1,0 +1,48 @@
+@use '../../../../sass/theme';
+@use '../../../../sass/utils/screen';
+@use '../../../../sass/utils/mixins';
+
+.container-all-post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-link {
+  @media (min-width: screen.$md) {
+    &:hover {
+      .post-title {
+        background: linear-gradient(to top left, theme.$teal, theme.$indigo);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+
+  .post-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .post-title {
+      font-weight: 600;
+      color: theme.$gray;
+      font-size: 1.125rem;
+      line-height: 150%;
+    }
+
+    .date {
+      @include mixins.date-text;
+    }
+  }
+
+  @media (max-width: screen.$sm) {
+    .post-text {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+  }
+}

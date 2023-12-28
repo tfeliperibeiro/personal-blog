@@ -1,0 +1,15 @@
+@use '../../../../sass/theme';
+
+.container {
+  display: flex;
+  background: theme.$hover;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+  position: relative;
+}
+
+.code {
+  font-weight: bold;
+  line-height: 150%;
+}

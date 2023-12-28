@@ -1,0 +1,43 @@
+@use '../../sass/theme';
+@use '../../sass/utils/screen';
+
+.hidden {
+  display: none;
+}
+
+.container-menu-float {
+  display: initial;
+  transition: opacity 200ms ease-in;
+  width: 100%;
+  height: 60px;
+  top: 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-inline: 1rem;
+  border-radius: 0.625rem;
+  margin-bottom: 1rem;
+  z-index: 9999;
+  position: sticky;
+
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  box-shadow: 0px 10px 15px -3px rgba(theme.$hover, 0.2);
+
+  background: linear-gradient(
+    to right,
+    rgba(theme.$teal, 0.2),
+    rgba(theme.$sky, 0.2),
+    rgba(theme.$indigo, 0.2)
+  );
+
+  div {
+    margin-top: 0;
+  }
+
+  @media (max-width: screen.$md) {
+    width: 100%;
+    overflow: hidden;
+    gap: 1rem;
+  }
+}
