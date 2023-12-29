@@ -11,7 +11,7 @@ export const Posts = () => {
   return (
     <section className={styles['container-posts']}>
       <NewPostCard />
-      <p className={styles['all-articles-text']}>Todos os artigos</p>
+      <p className={styles['all-articles-text']}>Todos os artigos:</p>
       <AllPostsList posts={posts} />
     </section>
   );
