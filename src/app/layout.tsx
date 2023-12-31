@@ -9,6 +9,7 @@ import '@/styles/sass/globals.scss';
 import styles from '../styles/sass/pages/layout.module.scss';
 import { MenuFloat } from '@/components/MenuFloat';
 import { Gradient } from '@/components/Gradient';
+import { PropsWithChildren } from 'react';
 
 export const metadata: Metadata = {
   title: 'thiagoribeiro.dev',
@@ -23,11 +24,7 @@ const inter = Inter({
   subsets: ['latin']
 });
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={inter.className}>
