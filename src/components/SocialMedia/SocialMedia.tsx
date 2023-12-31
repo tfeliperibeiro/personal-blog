@@ -2,14 +2,12 @@ import styles from './styles.module.scss';
 
 import Link from 'next/link';
 
+import { SOCIAL_MEDIA } from '../../constants';
+
 export const SocialMedia = () => {
   return (
     <div className={styles['container-social-media']}>
-      <Link
-        className={styles.link}
-        target="_blank"
-        href={'https://github.com/tfeliperibeiro'}
-      >
+      <Link className={styles.link} target="_blank" href={SOCIAL_MEDIA.GITHUB}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="#f2f2f2"
@@ -26,7 +24,7 @@ export const SocialMedia = () => {
       </Link>
       <Link
         target="_blank"
-        href={'https://www.linkedin.com/in/tfeliperibeiro/'}
+        href={SOCIAL_MEDIA.LINKEDIN}
         className={styles.link}
       >
         <svg
