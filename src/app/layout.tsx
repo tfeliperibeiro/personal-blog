@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 
 import { Inter } from 'next/font/google';
 
-import '@/sass/globals.scss';
+import '@/styles/variables.css';
+
+import '@/styles/sass/globals.scss';
 
 import styles from '../sass/pages/layout.module.scss';
 import { MenuFloat } from '@/components/MenuFloat';
