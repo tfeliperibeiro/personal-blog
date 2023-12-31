@@ -1,4 +1,4 @@
-import { PostService } from '@/services';
+import { PostService } from '@services/index';
 import styles from './styles.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';

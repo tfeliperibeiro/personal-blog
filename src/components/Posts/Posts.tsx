@@ -3,7 +3,7 @@ import { AllPostsList } from './components/AllPostList';
 import { NewPostCard } from './components/NewPostCard';
 
 import styles from './styles.module.scss';
-import { PostService } from '@/services';
+import { PostService } from '@services/index';
 
 export const Posts = () => {
   const { posts } = PostService.getAll();

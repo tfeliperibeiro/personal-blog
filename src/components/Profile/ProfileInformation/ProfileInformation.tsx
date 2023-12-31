@@ -3,7 +3,7 @@
 import styles from './styles.module.scss';
 
 import { ProfileImage } from '../ProfileImage';
-import { SocialMedia } from '@/components/SocialMedia';
+import { SocialMedia } from '@components/SocialMedia';
 import { useMotionValueEvent, useScroll, motion } from 'framer-motion';
 import { useState } from 'react';
 

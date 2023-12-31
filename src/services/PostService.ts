@@ -1,4 +1,4 @@
-import { formatPosts } from '@/utils';
+import { formatPosts } from '@utils/index';
 
 import { allPosts } from 'contentlayer/generated';
 

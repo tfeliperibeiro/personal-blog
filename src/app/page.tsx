@@ -1,5 +1,5 @@
-import { Posts } from '@/components/Posts';
-import { ProfileInformation } from '@/components/Profile/ProfileInformation';
+import { Posts } from '@components/Posts';
+import { ProfileInformation } from '@components/Profile/ProfileInformation';
 
 export default function Home() {
   return (
