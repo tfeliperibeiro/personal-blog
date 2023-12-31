@@ -11,6 +11,11 @@ type ProfileImageProps = {
   isMenuFloat?: boolean;
 };
 
+enum sizes {
+  small = 40,
+  large = 62
+}
+
 export const ProfileImage = ({
   size = 'large',
   isMenuFloat = false
@@ -27,8 +32,8 @@ export const ProfileImage = ({
           quality={100}
           priority={true}
           className="rounded-full"
-          width={size === 'large' ? 62 : 40}
-          height={size === 'large' ? 62 : 40}
+          width={size === 'large' ? sizes.large : sizes.small}
+          height={size === 'large' ? sizes.large : sizes.small}
         />
       </div>
     </Link>
