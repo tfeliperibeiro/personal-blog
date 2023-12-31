@@ -1,14 +1,13 @@
-@use '../../sass/theme';
-@use '../../sass/utils/mixins';
+@use '../../styles/sass/utils/mixins';
 
 @mixin headings {
-  color: theme.$white;
+  color: var(--white);
   font-weight: 600;
   margin-top: 3rem;
 }
 
 @mixin titles {
-  color: theme.$gray;
+  color: var(--gray);
   font-weight: 400;
   margin: 1rem 0;
   line-height: 150%;

@@ -1,8 +1,8 @@
-@use '../../../../sass/theme';
+@use '../../../../styles/sass/theme';
 
 .container {
   display: flex;
-  background: theme.$hover;
+  background: var(--hover);
   padding: 1rem;
   border-radius: 0.25rem;
   overflow-x: auto;

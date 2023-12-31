@@ -1,5 +1,4 @@
-@use '../../../sass/theme';
-@use '../../../sass/utils/screen';
+@use '../../../styles/sass/utils/screen';
 
 .container {
   display: flex;
@@ -13,13 +12,13 @@
   gap: 0.25rem;
 
   h1 {
-    color: theme.$white;
+    color: var(--white);
     font-weight: 900;
     font-size: 2rem;
   }
 
   p {
-    color: theme.$gray;
+    color: var(--gray);
     font-weight: 300;
   }
 }
@@ -28,7 +27,7 @@
   margin-top: 2rem;
   font-size: 1.125rem;
   line-height: 150%;
-  color: theme.$gray;
+  color: var(--gray);
 
   @media (max-width: screen.$sm) {
     font-size: 1rem;

@@ -1,8 +1,7 @@
-@use '../../../sass/theme';
-@use '../../../sass/utils/mixins';
+@use '../../../styles/sass/utils/mixins';
 
 .post-title {
-  color: theme.$white;
+  color: var(--white);
   font-weight: 900;
   margin: 4rem 0 0.5rem 0;
 }
@@ -37,7 +36,7 @@
 }
 
 .back-link {
-  color: theme.$white;
+  color: var(--white);
   display: flex;
   align-items: center;
   gap: 0.3rem;

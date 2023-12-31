@@ -1,4 +1,4 @@
-import { slugify, formatDate } from '@/functions';
+import { slugify, formatDate } from '@/utils';
 
 import { v4 as uuidv4 } from 'uuid';
 

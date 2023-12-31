@@ -6,7 +6,7 @@ import '@/styles/variables.css';
 
 import '@/styles/sass/globals.scss';
 
-import styles from '../sass/pages/layout.module.scss';
+import styles from '../styles/sass/pages/layout.module.scss';
 import { MenuFloat } from '@/components/MenuFloat';
 import { Gradient } from '@/components/Gradient';
 
