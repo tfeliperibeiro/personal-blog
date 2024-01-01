@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 import Link from 'next/link';
 
-import { SOCIAL_MEDIA } from '../../constants';
+import { SOCIAL_MEDIA } from '@constants/index';
 
 export const SocialMedia = () => {
   return (
