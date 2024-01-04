@@ -25,7 +25,7 @@ export const ProfileInformation = () => {
         <ProfileImage />
         <div className={styles.information}>
           <h1>Thiago</h1>
-          <p>Desenvolvedor Frontend</p>
+          <p>Desenvolvedor Front End</p>
         </div>
       </div>
       <p className={styles.description}>
