@@ -3,8 +3,8 @@
   height: 1px;
   background: linear-gradient(
     to right,
-    rgba(var(--hover), 0.2),
-    rgba(var(--gray), 0.4)
+    rgba(var(--rgb-hover), 0.2),
+    rgba(var(--rgb-gray), 0.4)
   );
   border-radius: 1rem;
 }

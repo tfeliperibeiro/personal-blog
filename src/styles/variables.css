@@ -6,4 +6,9 @@
   --white: #f2f2f2;
   --gray: #8f9ba8;
   --hover: #212024;
+  --rgb-teal: 0, 128, 128;
+  --rgb-sky: 135, 206, 250;
+  --rgb-indigo: 75, 0, 130;
+  --rgb-gray: 143, 155, 168;
+  --rgb-hover: 33, 32, 36;
 }

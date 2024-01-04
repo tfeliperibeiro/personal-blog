@@ -21,13 +21,13 @@
 
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
-  box-shadow: 0px 10px 15px -3px rgba(var(--hover), 0.2);
+  box-shadow: 0px 10px 15px -3px rgba(var(--rgb-hover), 0.2);
 
   background: linear-gradient(
     to right,
-    rgba(var(--teal), 0.2),
-    rgba(var(--sky), 0.2),
-    rgba(var(--indigo), 0.2)
+    rgba(var(--rgb-teal), 0.2),
+    rgba(var(--rgb-sky), 0.2),
+    rgba(var(--rgb-indigo), 0.2)
   );
 
   div {

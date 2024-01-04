@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: 'thiagoribeiro.dev',
   description: 'Frontend Developer',
   icons: {
-    icon: 'assets/favicon.svg'
+    icon: 'assets/logo.svg'
   }
 };
 
