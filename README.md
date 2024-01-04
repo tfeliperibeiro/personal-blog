@@ -1,8 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to my personal web site
 
-## Getting Started
+This Next.js project is designed to showcase my personal content and blog.
 
-First, run the development server:
+## Running the Project Locally
+
+To get started, clone the project:
+
+```bash
+git clone git@github.com:tfeliperibeiro/personal-blog.git
+```
+
+1. Install dependencies using your package manager of choice (npm, yarn, or pnpm):
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
+
+1. Run the development server:
 
 ```bash
 npm run dev
@@ -14,21 +32,49 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Contributing to the Project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Thank you for considering contributing to my Next.js project! Your involvement is highly appreciated. Here are some guidelines on how you can contribute:
 
-## Learn More
+## Bug Reports and Feature Requests
 
-To learn more about Next.js, take a look at the following resources:
+If you come across any bugs or have ideas for new features, please open an issue on GitHub. Be sure to include a clear description and, if possible, steps to reproduce the issue.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Code Contributions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Fork the repository to your own GitHub account.
+2. Clone the project to your local machine.
 
-## Deploy on Vercel
+```bash
+git clone https://github.com/your-username/your-project-name.git
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a new branch for your feature or bug fix.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+git checkout -b feature/your-feature-name
+```
+
+1. Make your changes and commit them with descriptive commit messages.
+
+```bash
+git commit -m "Add your commit message here"
+```
+
+1. Push your changes to your forked repository.
+
+```bash
+git push origin feature/your-feature-name
+```
+
+## Style Guidelines
+
+Please follow the existing code style and conventions. If there are no specific guidelines, stick to common practices in the Next.js, TypeScript, and Sass communities.
+
+## Testing
+
+Ensure that your changes do not break existing functionality. If applicable, add new tests to cover the changes you make.
+
+## Thank You!
+
+Your contributions help make this project better. Thank you for taking the time to contribute, and I look forward to reviewing your pull requests!
