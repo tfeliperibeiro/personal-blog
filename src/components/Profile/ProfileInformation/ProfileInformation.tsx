@@ -28,9 +28,7 @@ export const ProfileInformation = () => {
           <p>Desenvolvedor Front End</p>
         </div>
       </div>
-      <p className={styles.description}>
-        Código • Desenvolvimento Web • Front End
-      </p>
+      <p className={styles.description}>Desenvolvimento Web • Front End</p>
       <SocialMedia />
     </motion.section>
   );
