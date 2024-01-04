@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 
 import readingTime from 'reading-time';
@@ -6,6 +7,21 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
+
+const options = {
+  theme: 'one-dark-pro',
+  onVisitLine(node: any) {
+    if (node.children.length === 0) {
+      node.children = [{ type: 'text', value: ' ' }];
+    }
+  },
+  onVisitHighlightedLine(node: any) {
+    node.properties.className.push('line--highlighted');
+  },
+  onVisitHighlightedWord(node: any) {
+    node.properties.className = ['word--highlighted'];
+  }
+};
 
 const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -40,23 +56,7 @@ export default makeSource({
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
-      [
-        rehypePrettyCode,
-        {
-          theme: 'one-dark-pro',
-          onVisitLine(node: any) {
-            if (node.children.length === 0) {
-              node.children = [{ type: 'text', value: ' ' }];
-            }
-          },
-          onVisitHighlightedLine(node: any) {
-            node.properties.className.push('line--highlighted');
-          },
-          onVisitHighlightedWord(node: any) {
-            node.properties.className = ['word--highlighted'];
-          }
-        }
-      ],
+      [rehypePrettyCode, options],
       rehypeSlug,
       [
         rehypeAutolinkHeadings,

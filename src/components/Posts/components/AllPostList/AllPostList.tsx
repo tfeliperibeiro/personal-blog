@@ -1,8 +1,8 @@
-import { Divider } from '@/components/Divider';
+import { Divider } from '@components/Divider';
 import styles from './styles.module.scss';
 
 import Link from 'next/link';
-import { BlogPost } from '@/models/BlogPost';
+import { BlogPost } from '@models/BlogPost';
 
 type AllPostListProps = {
   posts: BlogPost[];

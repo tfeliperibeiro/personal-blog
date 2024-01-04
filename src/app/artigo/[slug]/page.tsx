@@ -3,9 +3,9 @@
 import Image from 'next/image';
 import { FaArrowLeft } from 'react-icons/fa6';
 
-import { PostService } from '@/services';
+import { PostService } from '@services/index';
 
-import { Mdx } from '@/components/Mdx';
+import { Mdx } from '@components/Mdx';
 
 import styles from './styles.module.scss';
 

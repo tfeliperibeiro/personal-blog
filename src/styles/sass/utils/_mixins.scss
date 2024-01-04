@@ -1,9 +1,7 @@
-@use '../theme';
-
 @mixin date-text {
   font-weight: 300;
   font-size: 0.875rem;
-  color: theme.$gray;
+  color: var(--gray);
 }
 
 @mixin link {
@@ -15,7 +13,7 @@
     text-decoration: underline;
 
     &:hover {
-      color: theme.$teal;
+      color: var(--teal);
       transition: color 0.2s ease-out;
     }
   }

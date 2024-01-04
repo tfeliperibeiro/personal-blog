@@ -1,6 +1,5 @@
-@use '../../../../sass/theme';
-@use '../../../../sass/utils/screen';
-@use '../../../../sass/utils/mixins';
+@use '../../../../styles/sass/utils/screen';
+@use '../../../../styles/sass/utils/mixins';
 
 .container-all-post-list {
   display: flex;
@@ -12,7 +11,7 @@
   @media (min-width: screen.$md) {
     &:hover {
       .post-title {
-        background: linear-gradient(to top left, theme.$teal, theme.$indigo);
+        background: linear-gradient(to top left, var(--teal), var(--indigo));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -28,7 +27,7 @@
 
     .post-title {
       font-weight: 600;
-      color: theme.$gray;
+      color: var(--gray);
       font-size: 1.125rem;
       line-height: 150%;
     }

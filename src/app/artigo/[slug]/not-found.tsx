@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import styles from './not-found.module.scss';
-import { Gradient } from '@/components/Gradient';
+import { Gradient } from '@components/Gradient';
 
 export default function NotFound() {
   return (

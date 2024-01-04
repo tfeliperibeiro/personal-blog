@@ -1,12 +1,10 @@
-@use '../../sass/theme';
-
 .divider {
   width: 100%;
   height: 1px;
   background: linear-gradient(
     to right,
-    rgba(theme.$hover, 0.2),
-    rgba(theme.$gray, 0.4)
+    rgba(var(--hover), 0.2),
+    rgba(var(--gray), 0.4)
   );
   border-radius: 1rem;
 }

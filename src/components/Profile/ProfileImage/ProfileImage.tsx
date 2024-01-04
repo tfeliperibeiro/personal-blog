@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import PhotoOfThiago from '../../../../public/assets/profile.png';
+import PhotoOfThiago from '@public/assets/profile.png';
 import Link from 'next/link';
 import styles from './styles.module.scss';
 

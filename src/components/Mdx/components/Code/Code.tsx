@@ -1,12 +1,8 @@
-import { HTMLAttributes } from 'react';
+import { PropsWithChildren } from 'react';
 
 import style from './styles.module.scss';
 
-type CodeProps = HTMLAttributes<HTMLPreElement> & {
-  children: React.ReactNode;
-};
-
-export const Code = ({ children, ...props }: CodeProps) => {
+export const Code = ({ children, ...props }: PropsWithChildren) => {
   return (
     <div className={style.container}>
       <pre className={style.code} {...props}>

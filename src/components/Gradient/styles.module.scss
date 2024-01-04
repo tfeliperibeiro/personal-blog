@@ -1,5 +1,4 @@
-@use '../../sass/theme';
-@use '../../sass/utils/screen';
+@use '../../styles/sass/utils/screen';
 
 .container-gradient {
   position: relative;
@@ -16,9 +15,9 @@
   filter: blur(64px);
   background: linear-gradient(
     to right,
-    rgba(theme.$teal, 0.2),
-    rgba(theme.$sky, 0.2),
-    rgba(theme.$indigo, 0.2)
+    rgba(var(--teal), 0.2),
+    rgba(var(--sky), 0.2),
+    rgba(var(--indigo), 0.2)
   );
 
   @media (min-width: screen.$md) {

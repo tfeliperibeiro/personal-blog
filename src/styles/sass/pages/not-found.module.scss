@@ -1,7 +1,5 @@
-@use '../theme';
-
 @mixin not-found {
-  color: theme.$white;
+  color: var(--white);
 }
 
 .container-not-found {
@@ -24,11 +22,11 @@
 }
 
 .link {
-  color: theme.$teal;
+  color: var(--teal);
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: rgba(theme.$teal, 0.8);
+    color: rgba(var(--teal), 0.8);
     transition: color 0.2s ease-in-out;
   }
 }
