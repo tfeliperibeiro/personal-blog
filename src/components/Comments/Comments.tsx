@@ -8,7 +8,7 @@ type CommentsProps = {
 };
 
 export const Comments = ({ pageId }: CommentsProps) => {
-  const webSiteId = Number(process.env.NEXT_PUBLIC_YOUR_WEBSITE_ID);
+  const webSiteId = Number(process.env.NEXT_PUBLIC_WEBSITE_ID);
 
   return (
     <div className={styles['container-comments']}>
