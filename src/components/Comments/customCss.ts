@@ -25,4 +25,8 @@ export const customCss = `
 .reaction-top img::hover {
   cursor: none;
 }
+
+.main-box-footer a {
+  font-size: 12px;
+}
 `;
