@@ -645,6 +645,18 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@hyvor/hyvor-talk-base@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@hyvor/hyvor-talk-base/-/hyvor-talk-base-0.0.3.tgz#58d19f0c0e5e131ec81a93a58825f6fce9625aef"
+  integrity sha512-rC/l/mQ8gk7BR8rKN/6AqWoIjedQDYrSwD/NmMwVZFukEjsrCvvWp3j+TEqfTLIPY1Z0CJZY6u8LJCT1HOLinA==
+
+"@hyvor/hyvor-talk-react@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@hyvor/hyvor-talk-react/-/hyvor-talk-react-0.0.2.tgz#d817c23c800095683cb0549ed43662a66d09602f"
+  integrity sha512-BbgUCEoCQNv9p0jzfV6qeBQd6HvrC644QtcJKSW7aXjXrvE89Rwv3Lum1/1mKboeWaItcXZzUtQ4rxytlAdcIQ==
+  dependencies:
+    "@hyvor/hyvor-talk-base" "^0.0.3"
+
 "@img/sharp-darwin-arm64@0.33.1":
   version "0.33.1"
   resolved "https://registry.yarnpkg.com/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.33.1.tgz#9d3cb0e4899b10b003608a018877b45b6db02861"

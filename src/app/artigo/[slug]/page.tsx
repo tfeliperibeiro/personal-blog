@@ -11,6 +11,7 @@ import styles from './styles.module.scss';
 
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { Comments } from '@components/Comments';
 
 type Props = {
   params: {
@@ -59,6 +60,7 @@ export default function Posts({ params }: Props) {
         className={styles.readingTime}
       >{`${post?.readingTime} min de leitura`}</span>
       <Mdx code={post?.body.code} />
+      <Comments pageId={post.slug} />
     </div>
   );
 }
