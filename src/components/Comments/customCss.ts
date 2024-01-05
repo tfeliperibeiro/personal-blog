@@ -9,7 +9,8 @@ export const customCss = `
 .comment-content-inner, 
 .sort-button,
 .back, 
-.login-signup .login {
+.login-signup .login,
+.main-box-footer a {
   color: var(--white)
 }
 
