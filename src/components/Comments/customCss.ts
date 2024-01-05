@@ -8,7 +8,8 @@ export const customCss = `
 .user-name, 
 .comment-content-inner, 
 .sort-button,
-.back {
+.back, 
+.login-signup .login {
   color: var(--white)
 }
 
