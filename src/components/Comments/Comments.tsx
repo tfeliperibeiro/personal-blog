@@ -20,7 +20,7 @@ export const Comments = ({ pageId }: CommentsProps) => {
         settings={{
           dark_palette: {
             accent: 'var(--white)',
-            box: 'rgba(var(--rgb-hover), 0.3)'
+            box: 'var(--hover)'
           },
           custom_css: customCss
         }}
