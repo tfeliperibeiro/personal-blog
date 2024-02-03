@@ -15,7 +15,7 @@ export const AllPostsList = ({ posts }: AllPostListProps) => {
         <>
           <Link
             href={`artigo/${post.slug}`}
-            key={post.id}
+            key={post.slug}
             className={styles['post-link']}
           >
             <div className={styles['post-text']}>

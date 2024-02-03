@@ -1,5 +1,4 @@
 export type BlogPost = {
-  id: string;
   slug: string;
   readingTime: number;
   newPost: boolean;

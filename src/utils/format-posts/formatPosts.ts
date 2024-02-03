@@ -1,7 +1,5 @@
 import { slugify, formatDate } from '@utils/index';
 
-import { v4 as uuidv4 } from 'uuid';
-
 import { Post } from 'contentlayer/generated';
 
 export const formatPosts = (posts: Post[]) => {
@@ -9,7 +7,6 @@ export const formatPosts = (posts: Post[]) => {
 
   const formattedPost = sortedPosts.map((post, index) => {
     return {
-      id: uuidv4(),
       slug: slugify(post.slug),
       body: post.body,
       newPost: index === 0,
