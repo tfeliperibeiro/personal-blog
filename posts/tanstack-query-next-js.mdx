@@ -1,0 +1,27 @@
+---
+title: TanStack Query e Server Components
+description: Como buscar dados com TanStack Query usando Server Components no Next JS
+date: 2024-02-02 22:30:00
+image: https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+imageAuthorName: Kanashi
+imageProviderName: Unsplash
+imageAuthorLink: https://unsplash.com/@kanashi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
+imageProviderLink: https://unsplash.com/photos/white-cat-on-white-textile-BLW_KQ0Rkn0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
+---
+
+> Este post pode ser um pouco mais longo do que o normal, nele iremos abordar o que é Server Components e como fazer busca de dados
+> utilizando TanStack Query junto com os Server Components.
+
+## Server Components
+
+Acho que a maioria de vocês acompanhou a atualização do Next JS nos útimos meses, chegando na versão 14
+e trazendo muitas features e novidades no desenvolvimento web moderna. Uma das novas features são os Server Components do React.Js.
+
+Acredito que para entender toda essa mudança que está acontecendo na web, como por exemplo os Server Components, precisamos mudar nosso modelo mental e
+pensar de uma forma diferente ao buscar nossos dados.
+
+Atualmente, no Next JS há três estratégias diferentes de renderização no servidor:
+
+### _Static Rendering_
+
+A renderização estática acontece no momento da construção (build)

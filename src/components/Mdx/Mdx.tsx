@@ -35,6 +35,12 @@ const components: MDXComponents = {
 
   pre: ({ children, ...props }) => <Code {...props}>{children}</Code>,
 
+  blockquote: ({ children, ...props }) => (
+    <blockquote className={styles.blockquote} {...props}>
+      {children}
+    </blockquote>
+  ),
+
   em: ({ children, ...props }) => (
     <em className={styles.emphasis} {...props}>
       {children}
